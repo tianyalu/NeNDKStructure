@@ -1,4 +1,4 @@
-# NePlayer AndroidStudio下搭建NDK环境 
+# NeNDKStructure AndroidStudio下搭建NDK环境 
 1. 将在Linux下编译好的lib目录下的.a静态库文件复制到项目的`app/libs/armeabi-v7a`目录下.  
 2. 将在Linux下编译好的include目录复制到项目的`app/src/main/cpp`目录下.  
 3. 配置build.gradle文件:  
