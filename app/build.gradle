@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.1"
     defaultConfig {
         applicationId "com.sty.ne.player"
-        minSdkVersion 21
+        minSdkVersion 21    //这里的最低版本最好不小于21，否则可能编译出错
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"

@@ -3,13 +3,21 @@
 2. 将在Linux下编译好的include目录复制到项目的`app/src/main/cpp`目录下.  
 3. 配置build.gradle文件:  
 ```groovy
-externalNativeBuild {
-    cmake {
-        cppFlags ""
-        //abiFilters "armeabi-v7a"  //错误的坑爹写法
-    }
-    ndk {
-        abiFilters "armeabi-v7a"
+defaultConfig {
+    applicationId "com.sty.ne.player"
+    minSdkVersion 21  //这里的最低版本最好不小于21，否则可能编译出错
+    targetSdkVersion 28
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    externalNativeBuild {
+        cmake {
+            cppFlags ""
+            //abiFilters "armeabi-v7a"  //错误的坑爹写法
+        }
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
     }
 }
 ```
