@@ -60,5 +60,6 @@ Java_com_sty_ne_player_MainActivity_stringFromJNI(
     return env->NewStringUTF(av_version_info()); //4.0.5
 }
 ```
-**疑惑：**  
-虽然经过一些采坑以及修改代码，最终运行成功了，但是`#include <libavcodec/avcodec.h>`和`av_version_info()`这两处依旧爆红，不知何故？  
+~~**疑惑：**~~  
+~~虽然经过一些采坑以及修改代码，最终运行成功了，但是`#include <libavcodec/avcodec.h>`和`av_version_info()`这两处依旧爆红，不知何故？~~  
+
